@@ -55,11 +55,6 @@ jobs:
           mkdir output
           cp *.pdf output/
 
-      - name: Push changes to GitHub
-        run: git push origin pdf
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Push to gh-pages
         if: success() && github.event_name == 'push'
         # Don't use tags: https://julienrenaux.fr/2019/12/20/github-actions-security-risk/
