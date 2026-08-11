@@ -25,7 +25,7 @@
 \newcommand{\MyName}{\FirstName\ \LastName}
 \newcommand{\Me}{\underline{\textbf{\LastName, \Initials}}}  % For citations
 \newcommand{\Email}{ybin@eitech.edu.cn}
-\newcommand{\PersonalWebsite}{www.ywbin.com}
+\newcommand{\PersonalWebsite}{www.ywbin.xyz}
 %\newcommand{\LabWebsite}{www.compgeolab.org}
 \newcommand{\ORCID}{0000-0001-7722-7885}
 %\newcommand{\GitHubProfile}{leouieda}
@@ -55,6 +55,10 @@
 \newcommand{\Jianghang}{Gu, J.}
 \newcommand{\Yuntian}{Chen, Y.}
 \newcommand{\Jianchun}{Wang, J.}
+\newcommand{\Bao}{Bao, C.}
+\newcommand{\Yuanqing}{Chen, Y.}
+\newcommand{\Qifeng}{Wu, Q.}
+\newcommand{\Wenhao}{Fan, W.}
 
 % Load packages
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -198,7 +202,7 @@
 
 % Macros to add links and mark publications
 \newcommand{\DOI}[1]{DOI: \href{https://doi.org/#1}{#1}}
-\newcommand{\Website}[1]{\href{https://#1}{#1}}
+\newcommand{\Website}[1]{\href{http://#1}{#1}}
 \newcommand{\Preprint}[1]{Preprint: \href{https://doi.org/#1}{#1}}
 \newcommand{\GitHub}[1]{GitHub: \href{https://github.com/#1}{#1}}
 
@@ -253,8 +257,7 @@
   %\\
   %Research Group: \Website{\LabWebsite}
   %\\
-  Website: \Website{\PersonalWebsite}
-  \\
+  % Website: \Website{\PersonalWebsite} \\
   Email: \href{mailto:\Email}{\Email}
 \end{minipage}
 \begin{minipage}[t]{0.5\textwidth}
@@ -270,10 +273,9 @@
 \section{Professional Appointments}
 
 \begin{EntriesTableDuration}
-  \Duration{2025}{\Ongoing}  &
-  \textbf{Director of AI Software Department}, \TF\\
   \Duration{2024}{\Ongoing}  &
   \textbf{Research Assistant Professor}, College of Engineering, \EIT\\
+  \Duration{2024}{\Ongoing}  & \textbf{Part-time Consultant}, \TF\\
   \Duration{2021}{2023}  &
   \textbf{Visiting Scholar}, FPCRL (PI: Xiang I.A. Yang), \PSU 
 \end{EntriesTableDuration}
@@ -322,19 +324,66 @@
 \section{Publications}
 
 \begin{EntriesTableYear}
+\Year{2026}  &
+    \href{https://arXiv.org/abs/2607.09763}{Knowledge-Constrained Shape Optimization with a Mixture-of-Experts Neural Operator for High-Confidence Design.}
+  \newline
+  \textit{arXiv, under review at EAAI.}
+  \newline
+  \Wenhao, \Me *, \Jianghang, Luo, W., Xiang, J., \Yuntian \& \Shiyi
+\\
+\Year{2026}  &
+    \href{~}{ReGNet: A Lightweight Reynolds-Number-Generalized Neural Network for Wall-Bounded Inflow Generation.}
+  \newline
+  \textit{Under Review at Journal of Computational Physics.}
+  \newline
+  \Qifeng, \Me *, \Shi, \Yuanqing, \& \Xiang
+\\
+\Year{2026}  &
+    \href{https://arXiv.org/pdf/2606.11277}{Least-Action-Guided Diffusion for Physical Extrapolation.}
+  \newline
+  \textit{arXiv.}
+  \newline
+  \Zhongxin, \Me *, \Xiang, \& \Shiyi
+\\
+\Year{2026}  &
+    \href{https://arXiv.org/pdf/2604.05536}{Turbulence-like 5/3 spectral scaling in contextual representations of language as a complex system.}
+  \newline
+  \textit{arXiv.}
+  \newline
+  \Zhongxin, \Bao, \Me *, \Xiang *, \& \Shiyi *
+\\
+\Year{2026}  &
+    \href{https://doi.org/10.1063/5.0307919}{GeoFormer: Mesh-Free Geometry-to-Flow Alignment Framework for Real-Time Aerodynamics on Non-Watertight CAD.}
+  \newline
+  \textit{Physics of Fluid.}
+  \newline
+  \Jianghang, \Yuntian *, \Me, \& \Shiyi
+\\
+\Year{2026}  &
+    \href{~}{Canonical Separated Flows as Transferable Building Blocks in Data-Driven Turbulence Modeling.}
+  \newline
+  \textit{Chinese Journal of Aeronautics.}
+  \newline
+  \Bao, \Me *, \Shi, \& \Xiang *
+\\
+\Year{2026}  &
+    \href{~}{A Direct Numerical Simulation Investigation of the Slingshot Effect.}
+  \newline
+  \textit{International Journal of Heat and Fluid Flow.}
+  \newline
+  \Bao, \Shi, Nair, S., \Geogre, \Me *, \& \Xiang *
+\\
 \Year{2025}  &
-  \href{https://doi.org/10.1016/j.jcp.2025.114456}{Spatially-aware transformer operator for real-time aerodynamic evaluations of arbitrary three-dimensional vehicles.}
+    \href{https://doi.org/10.1016/j.jcp.2025.114456}{Spatially-aware transformer operator for real-time aerodynamic evaluations of arbitrary three-dimensional vehicles.}
   \newline
   \textit{Journal of Computational Physics.}
-  %\DOI{10.31223/X5QD5Z}.
   \newline
   \Huiyu, \Jianghang, \Yuntian, \Me *, \Jianchun *, \& \Shiyi
 \\
 \Year{2025}  &
-  \href{https://arxiv.org/pdf/2505.01681}{Large language model driven development of turbulence models.}
+  \href{https://arXiv.org/pdf/2505.01681}{Large language model driven development of turbulence models.}
   \newline
-  \textit{FLOW.}
-  %\DOI{10.31223/X5QD5Z}.
+  \textit{Flow.}
   \newline
   \Zhongxin, \Me, \Shi, \& \Xiang *
 \\
@@ -342,7 +391,6 @@
   \href{https://doi.org/10.1016/j.jcp.2025.113859}{Data-enabled reduction of the time complexity of iterative solvers.}
   \newline
   \textit{Journal of Computational Physics.}
-  %\DOI{10.31223/X5QD5Z}.
   \newline
   \Me, \Xiang *, \Sam \& \Kunz
 \\
@@ -350,7 +398,6 @@
   \href{https://doi.org/10.1016/j.taml.2024.100503}{Direct numerical simulation of the 7-7-7 film cooling at a range of compound angles.}
   \newline
   \textit{International Journal of Heat and Mass Transfer.}
-  %\DOI{10.31223/X5QD5Z}.
   \newline
   \Me, \& \Xiang *
 \\
@@ -358,7 +405,6 @@
   \href{https://doi.org/10.1016/j.taml.2024.100503}{Constrained re-calibration of two-equation Reynolds-averaged Navier--Stokes models.}
   \newline
   \textit{Theoretical and Applied Mechanics Letters}
-  %\DOI{10.31223/X5QD5Z}.
   \newline
   \Me, \Jiaqi, \Xiaohan, \Sam, \& \Xiang *
 \\
@@ -366,7 +412,6 @@
   \href{https://doi.org/10.48550/arXiv.2310.09367}{Large-eddy simulation of separated flows on unconventionally coarse grids.}
   \newline
   \textit{Journal of Fluid Engineering.}
-  %\DOI{10.31223/X5QD5Z}.
   \newline
   \Me, \Park, \Lvyu, \& \Xiang *
 \\
@@ -374,7 +419,6 @@
   \href{https://doi.org/10.48550/arXiv.2310.09366}{A \textit{priori} screening of data-enabled turbulence models.}
   \newline
   \textit{Physical Review Fluids.}
-  %\DOI{10.31223/X5QD5Z}.
   \newline
   \Peng, \Me, \Xiang *, \Shi, \Abkar, \& \Park
 \\
@@ -382,7 +426,6 @@
   \href{https://doi.org/10.48550/arXiv.2310.09368}{Constrained re-calibration of Reynolds-averaged Navier-Stokes models.}
   \newline
   \textit{AIAA Journal.}
-  %\DOI{10.31223/X5QD5Z}.
   \newline
   \Me, \Geogre, \Kunz, \& \Xiang *
 \\
@@ -390,7 +433,6 @@
   \href{https://doi.org/10.6052/0459-1879-23-327}{A \textit{prior} investigation on heavy particles’ movement in compressible homogenous isotropic turbulence}.
   \newline
   \textit{Chinese Journal of Theoretical and Applied Mechanics.}
-  %\DOI{10.31223/X5QD5Z}.
   \newline
   \Me, \Wuqi, \Zhenhua *, \& \Shi *
 \\
@@ -398,7 +440,6 @@
   \href{https://doi.org/10.2514/1.J062870}{Data-enabled re-calibration of the Spalart-Allmaras model.}
   \newline
   \textit{AIAA Journal.}
-  %\DOI{10.31223/X5QD5Z}.
   \newline
   \Me, \Geogre, \& \Xiang *
 \\
@@ -406,7 +447,6 @@
   \href{https://doi.org/10.1017/jfm.2022.905}{Evolution of two counter-rotating vortices in a stratified turbulent environment.}
   \newline
   \textit{Journal of Fluid Mechanics.}
-  %\DOI{10.31223/X5QD5Z}.
   \newline
   \Me *, \Xiang, \Yantao, \Nirui, \& \Shi
 \\
@@ -414,7 +454,6 @@
   \href{https://doi.org/10.1103/PhysRevFluids.7.084610}{Progressive, extrapolative machine learning for near-wall turbulence modeling.}
   \newline
   \textit{Physical Review Fluids.}
-  %\DOI{10.31223/X5QD5Z}.
   \newline
   \Me, \Lihua, \Geogre, \& \Xiang *
 \\
@@ -422,114 +461,13 @@
   \href{https://doi.org/10.1017/jfm.2021.332}{A new idea to predict reshocked Richtmyer–Meshkov mixing: Constrained large-eddy simulation.}
   \newline
   \textit{Journal of Fluid Mechanics.}
-  %\DOI{10.31223/X5QD5Z}.
   \newline
   \Me, \Mengjuan, \Shi *, \Yousheng *, \& \Shiyi
 \end{EntriesTableYear}
 
-\begin{comment}
-\section{Conference Proceedings}
-
-\begin{EntriesTableYear}
-  \Year{2023}  &
-  A rubber-band approach to Reynolds-averaged Navier-Stokes modeling
-  \newline
-  \textit{76th Annual Meeting of the Division of Fluid Dynamics}
-  \newline
-  \Me, \Xiang, \Geogre, \& \Kunz\\
-  \Year{2023}  &
-  A priori screening of machine-learning turbulence models
-  \newline
-  \textit{76th Annual Meeting of the Division of Fluid Dynamics}
-  \newline
-  \Peng, \Me, \Shi, \Abkar, \& \Xiang\\
-  \Year{2023}  &
-  Design Optimization and Uncertainty Quantification of a Dual Airfoil System
-  \newline
-  \textit{76th Annual Meeting of the Division of Fluid Dynamics}
-  \newline
-  Rekos, J., \Me, \& \Xiang\\
-  \Year{2023}  &
-  Towards a physical interpretation of machine-learned turbulence models
-  \newline
-  \textit{76th Annual Meeting of the Division of Fluid Dynamics}
-  \newline
-  \Jiaqi, \Me, \Geogre, \& \Xiang\\
-  \Year{2022}  &
-  Data-enabled, progressive recalibration of the Spalart-Allmaras model for general purposes
-  \newline
-  \textit{75th Annual Meeting of the Division of Fluid Dynamics}
-  \newline
-  \Me, \& \Xiang\\
-  \Year{2022}  &
-  Exponential-like decay of the centerline velocity deficit and budget analysis in stratified wake
-  \newline
-  \textit{75th Annual Meeting of the Division of Fluid Dynamics}
-  \newline
-  \Jiaqi, \Me, \Xiang, \& \Kunz\\
-  \Year{2022}  &
-  Progressive, extrapolative machine learning in turbulence modeling
-  \newline
-  \textit{Symposium on Turbulence Modeling: Roadblocks, and the Potential for Machine Learning 2022}
-  \newline
-  \Me, \Jiaqi, \Xiang\\
-  \Year{2021}  &
-  Kinetic Energy Transport in the neighborhood of a counter-rotating vortex pair in a stratified and turbulent environment
-  \newline
-  \textit{74th Annual Meeting of the Division of Fluid Dynamics}
-  \newline
-  \Xiang, \Me, \Nirui, \Yantao, \& \Kunz.\\
-\end{EntriesTableYear}
-\end{comment}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{comment}
-\section{Interested Research Directions}
-
-\begin{itemize}
-\vspace{6pt}
-\item Turbulent flow
-\vspace{6pt}
-\item Complex flow
-\vspace{6pt}
-\item Computational fluid dynamics
-\vspace{6pt}
-\item Turbulence modeling
-\vspace{6pt}
-\item ML with CFD
-\vspace{6pt}
-\item Vortex dynamics
-\vspace{6pt}
-\item etc.
-\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-    
-\section{Work Experience}
-\begin{EntriesTableYear}
-    \Year{2017} & 
-    \textit{Teaching Assistant}
-    \newline
-    Electromagnetism, \USTC\\
-    \Year{2018} & 
-    \textit{Teaching Assistant}
-    \newline
-    Electromagnetism, \USTC\\
-    \Year{2018} & 
-    \textit{Teaching Assistant}
-    \newline
-    Complex Analysis, \USTC\\
-    \Year{2019} & 
-    \textit{Teaching Assistant}
-    \newline
-    Calculation Method, \USTC\\
-    \Year{2019} & 
-    \textit{Teaching Assistant}
-    \newline
-    Advanced Mathematics, \PKU\\
-\end{EntriesTableYear}
-\end{comment}
-
+\begin{comment}
 \section{Technical and Personal skills}
 
 \vspace{6pt}
@@ -540,5 +478,6 @@
 \vspace{6pt}
 \item \textbf{Industry Software Skills:} OpenFOAM, PointWise, SolidWorks, AutoCAD, etc.
 \end{itemize}
+\end{comment}
 
 \end{document}
